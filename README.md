@@ -22,6 +22,10 @@
   - Mixin to built-in Classes
   - Mixins to DOM
   - Mixins to process, console, require
+- Concurrency
+  - Processes
+  - Threads
+  - Workers
 
 # Memory
 
