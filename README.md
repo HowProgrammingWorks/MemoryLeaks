@@ -22,3 +22,11 @@
   - Mixin to built-in Classes
   - Mixins to DOM
   - Mixins to process, console, require
+
+# Memory
+
+- C++ Code
+- JavaScript Code
+- Stack
+- Heap
+- External
