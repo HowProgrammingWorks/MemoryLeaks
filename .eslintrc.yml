@@ -3,7 +3,7 @@ env:
   node: true
 extends: 'eslint:recommended'
 globals:
-  api: false
+  gc: false
 rules:
   indent:
     - error
