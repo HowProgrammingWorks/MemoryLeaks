@@ -1,4 +1,5 @@
 # Memory Leaks
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/0oZa64SB2wM/0.jpg)](https://www.youtube.com/watch?v=0oZa64SB2wM)
 
 - References
   - Global variables
