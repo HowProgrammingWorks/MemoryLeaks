@@ -4,7 +4,7 @@ const { EventEmitter } = require('events');
 
 const memory = [];
 
-const bytesToMb = bytes => Math.round(bytes / 1000, 2) / 1000;
+const bytesToMb = (bytes) => Math.round(bytes / 1000, 2) / 1000;
 
 const ee = new EventEmitter();
 
@@ -34,7 +34,7 @@ setTimeout(() => {
   process.exit(0);
 }, 15000);
 
-process.on('warning', warning => {
+process.on('warning', (warning) => {
   console.dir(warning);
   process.exit(0);
 });

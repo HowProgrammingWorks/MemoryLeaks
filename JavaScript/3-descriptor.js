@@ -4,7 +4,7 @@ const fs = require('fs');
 
 const memory = [];
 
-const bytesToMb = bytes => Math.round(bytes / 1000, 2) / 1000;
+const bytesToMb = (bytes) => Math.round(bytes / 1000, 2) / 1000;
 
 let descriptor = 0;
 

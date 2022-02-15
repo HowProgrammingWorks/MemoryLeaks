@@ -3,7 +3,7 @@
 const memory = [];
 let k = 0;
 
-const bytesToMb = bytes => Math.round(bytes / 1000, 2) / 1000;
+const bytesToMb = (bytes) => Math.round(bytes / 1000, 2) / 1000;
 
 const timer = setInterval(() => {
   k++;

@@ -2,13 +2,13 @@
 
 const memory = [];
 
-const bytesToMb = bytes => Math.round(bytes / 1000, 2) / 1000;
+const bytesToMb = (bytes) => Math.round(bytes / 1000, 2) / 1000;
 
-const recursiveClosure = arr => fn => recursiveClosure(arr.map(g => fn(g)));
-let f = recursiveClosure(new Array(1000).fill(x => x * 2));
+const recursiveClosure = (a) => (fn) => recursiveClosure(a.map((g) => fn(g)));
+let f = recursiveClosure(new Array(1000).fill((x) => x * 2));
 
 const timer = setInterval(() => {
-  f = f(fn => x => fn(x) * 2);
+  f = f((fn) => (x) => fn(x) * 2);
 }, 5);
 
 setInterval(() => {
