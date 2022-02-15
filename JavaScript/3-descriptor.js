@@ -9,10 +9,11 @@ const bytesToMb = bytes => Math.round(bytes / 1000, 2) / 1000;
 let descriptor = 0;
 
 const timer = setInterval(() => {
+  const handler = (err, fd) => {
+    descriptor = fd;
+  };
   for (let i = 0; i < 3; i++) {
-    fs.open('3-descriptor.js', (err, fd) => {
-      descriptor = fd;
-    });
+    fs.open('3-descriptor.js', handler);
   }
 }, 5);
 
